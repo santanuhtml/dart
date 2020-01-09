@@ -1,6 +1,6 @@
 Dart
 ---------------
-1. Print basic code Hello World!
+1.1 First Dart Application
 ---------------
 
 void main(){
@@ -13,7 +13,7 @@ here main is a function or a method in DART and it is a
 entry point of our application.
 
 ---------------
-1. basic code 2
+1.2 Second Dart Application
 ---------------
 
 void main(){
