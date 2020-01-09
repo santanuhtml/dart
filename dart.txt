@@ -1,0 +1,29 @@
+Dart
+---------------
+1. Print basic code Hello World!
+---------------
+
+void main(){
+  print("Hello World!");
+}
+
+
+Note: Here everything we need to writh within a function.
+here main is a function or a method in DART and it is a
+entry point of our application.
+
+---------------
+1. basic code 2
+---------------
+
+void main(){
+  print("Hello World!");                   //string
+  print("This is my second application.");
+  print(4);                                //integer
+  print(4+1);                              //calculation
+  print(4*10);
+  print(true);                            //boolian
+}
+
+
+
