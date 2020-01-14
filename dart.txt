@@ -159,4 +159,49 @@ void main(){
   print("The area of this rectangle is ${l*b}");
 }
 
+===============
+3.3 using 'final' and 'const' keyword
+===============
 
+Defination
+-----------------
+-> If you never want to change a value then use 
+   'final' and 'const' keyword.
+Example:
+final name = "santanu";
+const PI = 3.14;
+
+-----------------
+Difference between 'final' and 'const'
+-----------------
+
+
+
+Example1:
+void main(){
+  
+  //final keyword
+  final cityName = "Kolkata";
+  final String countryName = "India";
+      
+  print(cityName);
+  print(countryName);
+  
+  //const keyword
+  const PI = 3.14;
+  const gravity = 9.8;
+  
+  print(PI);
+  print(gravity);
+  
+}
+
+Example2:
+class Circle{
+  final color = #F00;
+  // const PI = 3.14;  X Only static field can declear as const.
+  static const PI = 3.14;
+}
+
+NOTE: We can't define const inside the class, we can only 
+define final
