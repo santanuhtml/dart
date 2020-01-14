@@ -25,5 +25,90 @@ void main(){
   print(true);                            //boolian
 }
 
+===============
+2.Built-in Data Types
+===============
+Note: All data types in Dart are objects
+Therefore, values are by default 'null'
 
+Variable Declaration:
+---------------
+i) Define a value 10         [integer]
+ii) Define a value "Henry"   [string]
+iii) Define a value true     [boolean]
+---------------
+
+i) Define a value 10 [Let's say it is your age]
+
+int age = 10;
+
+here
+int => data type  
+age => variable name
+10 => value
+
+OR we can also use 
+
+var age = 10;
+ 
+here
+var => it is inferred 'age' as integer automatically.
+
+---------------
+
+ii) Define a value "Henry" [Let's say it is your name]
+
+String name = "henry";
+OR
+var name = "henry";
+
+---------------
+
+iii) Define a value true [Person is alive = true OR dead = false]
+
+bool isAlive = true;
+OR var isAlive = true;
+
+---------------
+Example with Proper data type  
+---------------
+
+void main(){
+  int age = 10;
+  double percentage = 94.56;
+  String name = "santanu";
+  bool isAlive = true;
+
+  int hexValue = 0xAEAEAEAEE;
+  double exponential = 1.42e5;
+  
+  print(age);
+  print(percentage);
+  print(name);
+  print(isAlive);
+  print(hexValue);
+  print(exponential);
+}
+
+---------------
+Example with var data type  
+---------------
+
+void main(){
+  var age = 10;
+  var percentage = 94.56;
+  var name = "santanu";
+  var isAlive = true;
+  var hexValue = 0xAEAEAEAEE;
+  var exponential = 1.42e5;
+  
+  print(age);
+  print(percentage);
+  print(name);
+  print(isAlive);
+  print(hexValue);
+  print(exponential);
+}
+
+---------------
 
