@@ -26,7 +26,7 @@ void main(){
 }
 
 ===============
-2.Built-in Data Types
+3.1 Dart Data Types and Variables
 ===============
 Note: All data types in Dart are objects
 Therefore, values are by default 'null'
@@ -110,5 +110,53 @@ void main(){
   print(exponential);
 }
 
----------------
+===============
+3.2 Dart Strings, Literals and String Interpolation
+===============
+What are Literals?
+-----------------
+true;
+2;
+"santanu";
+4.5
+10
+All are called Literals and we can asign them
+with variables.
+
+-----------------
+Varius ways to write String Literals
+-----------------
+String s1 = 'Single';
+String s2 = "Double";
+String s3 = 'It/'s eassy';
+String s4 = "It's easy";
+String s5 = 'This is going to be a very long String.'
+             'This is just a sample string demo in Dart Programing Language';
+
+
+-----------------
+String Interpolation
+-----------------
+TYPE:1
+String name = "santanu";
+String message = "My name is $name";
+print(message);
+
+TYPE:2
+String name = "santanu";
+print("My name is $name");
+
+TYPE:3
+String name = "santanu";
+print("The number of chracters in the string santanu is ${name.length} ");
+
+TYPE:4
+void main(){
+  int l = 20;
+  int b = 10;
+  print("Sum of l and b is ${l+b}");
+  print("Sum of $l and $b is ${l+b}");
+  print("The area of this rectangle is ${l*b}");
+}
+
 
