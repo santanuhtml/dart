@@ -205,3 +205,53 @@ class Circle{
 
 NOTE: We can't define const inside the class, we can only 
 define final
+
+===============
+4.1 Dart IF ELSE Conditional Statements
+===============
+IF and Else Statement
+-----------------
+void main(){  
+  var age = 20;
+  if(age >= 18){
+    print("You can vote.");
+  }
+  else{
+    print("You are under 18, can't vote.");
+  } 
+}
+
+-----------------
+IF ELSE IF Ladder statements
+-----------------
+void main(){  
+  var marks = 95;
+  if(marks>=90 && marks<100){
+    print("A+ Grade");
+  }
+  else if(marks>=80 && marks<90){
+    print("A Grade");
+  }
+  else if(marks>=70 && marks<80){
+    print("B+ Grade");
+  }
+  else if(marks>=60 && marks<70){
+    print("B Grade");
+  }
+  else if(marks>=30 && marks<60){
+    print("C Grade");
+  }
+  else if(marks<30 && marks>=0){
+    print("You have failed");
+  }
+  else{
+    print("Invalid Marks!");
+  }
+}
+
+--------
+output
+1. A+ Grade
+for 200 
+2. Invalid Marks!
+--------
