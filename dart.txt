@@ -338,6 +338,30 @@ void main(){
  print(nameToPrint);
 }
 
+4.3 SWITCH and CASE
+-----------------
+Conditional Expressions
+-----------------
+void main(){  
+ String grade = "A";
+  switch (grade){
+    case "A":
+      print("Grade of A");
+      break;
+      
+     case "B":
+      print("Grade of B");
+      break;
+      
+     case "C":
+      print("Grade of C");
+      break;
+      
+     default :
+      print("Invalide Grade");
+  }
+}
+// Note: Switch case Statement applicable only for 'int' & 'String'
 
 
 
