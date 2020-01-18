@@ -36,6 +36,7 @@ Variable Declaration:
 i) Define a value 10         [integer]
 ii) Define a value "Henry"   [string]
 iii) Define a value true     [boolean]
+iv) Array
 ---------------
 
 i) Define a value 10 [Let's say it is your age]
@@ -109,6 +110,11 @@ void main(){
   print(hexValue);
   print(exponential);
 }
+
+iv)Array
+
+List name = ["santanu", "raju", "kaustav"];
+print(name[1]);
 
 ===============
 3.2 Dart Strings, Literals and String Interpolation
