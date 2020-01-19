@@ -1,0 +1,263 @@
+Functions 
+Syntax and properties of a function
+Function as Expressions
+Different type of function Parameters
+Different type of function Parameters
+  Required Parameters 
+  Optional Parameters
+    Optional Positional Parameters []
+    Optional Named Parameters {}
+    Optional Default Parameters
+
+
+===============
+5.3 Function
+===============
+---------------
+RETURN FUNCTION:
+---------------
+
+int findArea(int length, int breadth){
+    // Function Body: Put your code here
+    return length * breadth;
+}
+
+int => Return Type [Optional]
+findAare => Function Name
+(int length, int breadth) => Required Parameters
+
+
+---------------
+Not Returing Function
+---------------
+
+void findArea(int length, int breadth){
+  print(length * breadth);
+}
+void => We are not returning anything for our function.[Optional]
+
+---------------
+
+Note:
+In Dart everything is an Object so,
+ -> Functions in Dart are Objects.
+      Functions can be assigned to a variable or passed as parameter
+      to other functions.
+
+ -> All functions in Dart returns a value
+      if no return value is specified the function return null
+
+ -> Specifying return type is optional but is recommended as per code 
+    convention
+
+----------------
+
+void main() {
+}
+void findPerimeter(){
+  int length = 4;
+  int breadth = 6;
+  int perimeter = 2 * (length + breadth);
+  print("The Perimeter is $perimeter");
+}
+
+----------------
+
+Note: 
+we did not get any output of this code because
+main() function is the entry point of our code.
+so, the exact way to write is
+
+---------------
+Example1:
+---------------
+
+void main() {
+  findPerimeter();
+}
+void findPerimeter(){
+  int length = 4;
+  int breadth = 6;
+  int perimeter = 2 * (length + breadth);
+  print("The Perimeter is $perimeter");
+}
+
+---------------
+In this type of function we just print it's value.
+Example2:
+---------------
+
+void main() {
+  findPerimeter(6,6);
+}
+void findPerimeter(int length, int breadth){
+  int perimeter = 2 * (length + breadth);
+  print("The Perimeter is $perimeter");
+}
+
+---------------
+Return value
+---------------
+
+void main() {
+  int getit = getArea(5,10);
+  print(getit);
+}
+int getArea(int length, int breadth){
+  int area = length * breadth;
+  return area;
+}
+
+---------------
+Note: Incase of 'return' function we can asign it's value
+in a variable.
+
+===============
+Dart Short Hand Syntax | FAT ARROW
+===============
+void main() {
+  findPerimeter(5,5);
+  
+  int getit = getArea(5,10);
+  print(getit);
+}
+void findPerimeter(int length, int breadth) => print("The Perimeter is ${2 * (length + breadth)}");
+
+int getArea(int length, int breadth) => length * breadth;
+
+---------------
+here, 
+  '=>' this is called FAT ARROW.
+  In case of FAT ARROW we don't need to use '{}' brakets and 'return'.
+
+
+===============
+Required Parameters & Optional Positional Parameters
+===============
+Example1 of Required Parameters
+---------------
+
+void main() {
+  printCitys("Kolkata", "Londan", "Paris");
+}
+void printCitys(String city1, String city2, String city3){
+  print("Name 1 is $city1");
+  print("Name 2 is $city2");
+  print("Name 3 is $city3");
+}
+
+---------------
+Here if we miss any parameter then it will be an error.
+Example2 of Optional Positional Parameters
+In Optional Parameter we have to use []
+---------------
+
+void main() {
+  printCitys("Kolkata", "Londan", "Paris");
+  print("");
+  printCountry("India", "UK");
+}
+
+//Required Parameters
+void printCitys(String city1, String city2, String city3){
+  print("Name 1 is $city1");
+  print("Name 2 is $city2");
+  print("Name 3 is $city3");
+}
+
+//Optional Positional Parameters
+void printCountry(String country1, String country2, [String country3]){
+  print("Name 1 is $country1");
+  print("Name 2 is $country2");
+  print("Name 3 is $country3");
+}
+
+---------------
+if we don't use any parameter the output will be 'null'
+---------------
+===============
+Optional Named Parameters {}
+===============
+//basic
+void main() {
+  findVolume(10,20,30);
+}
+int findVolume(int lenght, int breadth, int height){
+  print("Length is $lenght");
+  print("Breadth is $breadth");
+  print("Height is $height");
+  print("Volume is ${lenght*breadth*height}");
+}
+
+
+Output:
+Length is 10
+Breadth is 20
+Height is 30
+Volume is 6000
+
+---------------
+Now we will use it with Named Parameters {}
+---------------
+
+void main() {
+  findVolume(10, height:30, breadth:20);  //Sequence does not maintain
+}
+int findVolume(int lenght, {int breadth, int height}){
+  print("Length is $lenght");
+  print("Breadth is $breadth");
+  print("Height is $height");
+  print("Volume is ${lenght*breadth*height}"); 
+}
+
+Output:
+Length is 10
+Breadth is 20
+Height is 30
+Volume is 6000
+---------------
+Advantage:
+1. Sequence does not matter if we keep paramater under
+   {} braket. So, in case of large amount of parameter
+   we don't think about the sequence.
+---------------
+===============
+Default Parameters:
+in Default parameter we can fixed any input valu, her we 
+fixed height value so we don't need to insert value. 
+===============
+
+void main() {
+  findVolume(10, 20);
+}
+int findVolume(int lenght, int breadth, {int height = 30}){
+  print("Length is $lenght");
+  print("Breadth is $breadth");
+  print("Height is $height");
+  print("Volume is ${lenght*breadth*height}");
+}
+
+---------------
+We can also replace value of height by using this
+---------------
+
+void main() {
+  findVolume(10, 20, height:40);
+}
+int findVolume(int lenght, int breadth, {int height = 30}){
+  print("Length is $lenght");
+  print("Breadth is $breadth");
+  print("Height is $height");
+  print("Volume is ${lenght*breadth*height}");
+}
+---------------
+
+
+
+
+
+
+
+
+
+
