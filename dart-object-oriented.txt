@@ -146,6 +146,7 @@ Note:
   ii) Constructor did not have any return type means it is by default 'void'.
   iii) What ever we code inside the Constructor, it will executed first.
   iv) With in same calss We may use either Default Constructor or Parameterized Constructor
+  v) With in same class we may use multiple Name Constructor.
 ---------------
 1. Default Constructor
 Note:
@@ -269,6 +270,9 @@ class Student{
 ---------------
 3. Name Constructor;
 ---------------
+Example1:
+Basic structure of Name Constructor
+---------------
 
 void main(){  
   
@@ -302,10 +306,45 @@ class Student{
   
 }
 
+---------------
+Example2:
+Basic structure with Multiple Name Constructor 
+---------------
 
+void main(){  
+  
+  var student3 = Student.myCustomConstructor();
+  student3.id = 22;
+  student3.name = "Rahim";
+  print("${student3.id} and ${student3.name}");
+  
+  
+  var student4 = Student.myAnotherConstructor(30, "Rohit");
+  print("${student4.id} and ${student4.name}");
 
+}
 
-
-
+class Student{
+  //properties
+  int id;        
+  String name;  
+  
+  
+  Student.myCustomConstructor(){                     //Named Constructor
+    print("This is my Custom Constructor");
+  }
+  
+  //STEP 1: Creatine another constructor
+  Student.myAnotherConstructor(this.id, this.name);   //Named Constructor
+  
+ 
+  void study(){
+    print("${this.name} is now studing");
+  }
+  void sleep(){
+    print("${this.name} is now sleeping");
+  }
+  
+}
 
 
