@@ -135,18 +135,21 @@ Shyam is now sleeping
 
 ===============
 Working with Constructors
+Use:
+Constructors use to create Object.
 ===============
 1. Default Constructor
 2. Parameterized Constructor
 3. name Constructor
 4. Constant Constructor
 Note: 
-  i) Name of the Constructor will be same as the class name,
+  i) You can initialize your instance or field varibales within Constructors
+  ii) Name of the Constructor will be same as the class name,
     here Constructor name is 'Student' because class name is 'Student'.
-  ii) Constructor did not have any return type means it is by default 'void'.
-  iii) What ever we code inside the Constructor, it will executed first.
-  iv) With in same calss We may use either Default Constructor or Parameterized Constructor
-  v) With in same class we may use multiple Name Constructor.
+  iii) Constructor did not have any return type means it is by default 'void'.
+  iv) What ever we code inside the Constructor, it will executed first.
+  v) With in same calss We may use either Default Constructor or Parameterized Constructor
+  vi) With in same class we may use multiple Name Constructor.
 ---------------
 1. Default Constructor
 Note:
