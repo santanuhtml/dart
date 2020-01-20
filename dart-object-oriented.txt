@@ -138,19 +138,132 @@ Working with Constructors
 ===============
 1. Default Constructor
 2. Parameterized Constructor
-3. Named Constructor
+3. name Constructor
 4. Constant Constructor
+Note: 
+  i) Name of the Constructor will be same as the class name,
+    here Constructor name is 'Student' because class name is 'Student'.
+  ii) Constructor did not have any return type means it is by default 'void'.
+  iii) What ever we code inside the Constructor, it will executed first.
+  iv) With in same calss We may use either Default Constructor or Parameterized Constructor
 ---------------
 1. Default Constructor
+Note:
+ 
 ---------------
 
+void main(){  
+  
+  //Step:2 Creating object form this class
+  var student1 = Student(); // here student1 is the object
+  
+  //to access id, name or this method
+  // student1.id
+  student1.id = 20;
+  student1.name = "RAM";
+  student1.study();
+  student1.sleep();
+  print("${student1.id} and ${student1.name}");
 
+}
 
+//step:1 define students properties and behaviour
+class Student{
+  //properties
+  int id;        //Instance or Field Variable, default value id null.
+  String name;   //Instance or Field Variable, default value id null.
+  
+  //Default Constructor
+  Student(){
+    print("This is my Default Constructor");
+  }
+  
+  //behaviour
+  void study(){
+    print("${this.name} is now studing");
+  }
+  void sleep(){
+    print("${this.name} is now sleeping");
+  }
+  
+}
 
+---------------
+2. Parameterized Constructor:
+   When a Constructor contain parameter called Parameterized Constructor.
+---------------
+void main(){  
+  
+  var student1 = Student(20,"RAM");  //STEP2
 
+  student1.study();
+  student1.sleep();
+  print("${student1.id} and ${student1.name}");
 
+}
 
+class Student{
+  //properties
+  int id;        
+  String name;  
+  
+  
+  //STEP1: Parameterized Constructor
+  Student(int id, String name){
+    this.id = id;  //'this.id' refers to properties and 'id' is parameter
+    this.name = name; //do
+    
+    //if we take those parameter with another name,
+    //then we did not need to take 'this.id', Example given below
+    // Student(int _id, String _name){
+        // id = _id;
+        // name = _name;
+    //  }
+    
+  }
+  
+  //behaviour
+  void study(){
+    print("${this.name} is now studing");
+  }
+  void sleep(){
+    print("${this.name} is now sleeping");
+  }
+  
+}
 
+---------------
+Now we will trim this Parameterized Constructor code
+---------------
+
+void main(){  
+  
+  var student1 = Student(20,"RAM"); 
+  
+  student1.study();
+  student1.sleep();
+  print("${student1.id} and ${student1.name}");
+
+}
+
+class Student{
+  //properties
+  int id;        
+  String name;  
+  
+  //Parameterized Constructor
+  Student(this.id, this.name); 
+  //here we don't have nay code to write inside the '{}', so we delete it and add ';'this
+  
+  //behaviour
+  void study(){
+    print("${this.name} is now studing");
+  }
+  void sleep(){
+    print("${this.name} is now sleeping");
+  }
+  
+}
 
 
 
