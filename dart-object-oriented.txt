@@ -266,9 +266,41 @@ class Student{
 }
 
 
+---------------
+3. Name Constructor;
+---------------
 
+void main(){  
+  
+  //STEP 2: name Constructor 
+  var student3 = Student.myCustomConstructor();
+  student3.id = 22;
+  student3.name = "Rahim";
+  print("${student3.id} and ${student3.name}");
 
+}
 
+class Student{
+  //properties
+  int id;        
+  String name;  
+  
+  //STEP 1; name Constructor 
+  Student.myCustomConstructor(){
+    //if you don't have code to write then delete the {} braket
+    //But here we will use some of code inside
+    print("This is my Custom Constructor");
+  }
+  
+ 
+  void study(){
+    print("${this.name} is now studing");
+  }
+  void sleep(){
+    print("${this.name} is now sleeping");
+  }
+  
+}
 
 
 
