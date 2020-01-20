@@ -1,0 +1,166 @@
+Object Oriented Dart
+
+===============
+Defining Class and Objects
+===============
+Baisc Structure With an Object
+---------------
+
+void main(){  
+  
+  //Step:2 Creating Object form this class
+  var student1 = Student(); // it is one Object and student1 is referance varibale
+  
+  //to access id, name or this method
+  // student1.id
+  student1.id;
+  student1.name;
+  student1.study();
+  student1.sleep();
+  print("${student1.id} and ${student1.name}");
+}
+
+//step:1 define students properties and behaviour
+class Student{
+  //properties
+  int id;        //Instace or Field Variable, default value id null.
+  String name;   //Instace or Field Variable, default value id null.
+
+  //So, we may add Instance value
+  //int id = 0;
+  //String name = "Add Student name";
+  
+  //behaviour
+  void study(){
+  }
+  void sleep(){
+  }
+  
+}
+
+---------------
+Output form Object 'student1'
+---------------
+
+void main(){  
+  
+  //Step:2 Creating object form this class
+  var student1 = Student(); // it is one Object and student1 is referance varibale
+  
+  //to access id, name or this method
+  // student1.id
+  student1.id = 19;
+  student1.name = "RAM";
+  student1.study();
+  student1.sleep();
+  print("${student1.id} and ${student1.name}");
+}
+
+//step:1 define students properties and behaviour
+class Student{
+  //properties
+  int id;        //Instace or Field Variable, default value id null.
+  String name;   //Instace or Field Variable, default value id null.
+  
+  //behaviour
+  void study(){
+    print("${this.name} is now studing"); 
+  }
+  void sleep(){
+    print("${this.name} is now sleeping");
+  }
+  
+}
+
+
+OUTPUT:
+RAM is now studing
+RAM is now sleeping
+19 and RAM
+---------------
+Note: 'this' keyword refers to 'name' of this particular 'Student'
+Now creaet another Object called 'student2'
+---------------
+
+void main(){  
+  
+  //Step:2 Creating object form this class
+  var student1 = Student(); // it is one Object and student1 is referance varibale
+  
+  //to access id, name or this method
+  // student1.id
+  student1.id = 20;
+  student1.name = "RAM";
+  student1.study();
+  student1.sleep();
+  print("${student1.id} and ${student1.name}");
+  
+  
+  print("");
+  
+  //creating another object student2
+  var student2 = Student(); // it is second Object and student2 is referance varibale
+  student2.id = 19;
+  student2.name = "Shyam";
+  student2.study();
+  student2.sleep();
+  print("${student1.id} and ${student1.name}");
+}
+
+//step:1 define students properties and behaviour
+class Student{
+  //properties
+  int id;        //Instace or Field Variable, default value id null.
+  String name;   //Instace or Field Variable, default value id null.
+  
+  //behaviour
+  void study(){
+    print("${this.name} is now studing");
+  }
+  void sleep(){
+    print("${this.name} is now sleeping");
+  }
+  
+}
+
+OUTPUT:
+RAM is now studing
+RAM is now sleeping
+20 and RAM
+
+Shyam is now studing
+Shyam is now sleeping
+20 and RAM
+
+
+===============
+Working with Constructors
+===============
+1. Default Constructor
+2. Parameterized Constructor
+3. Named Constructor
+4. Constant Constructor
+---------------
+1. Default Constructor
+---------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
