@@ -22,7 +22,8 @@ int findArea(int length, int breadth){
     return length * breadth;
 }
 
-int => Return Type [Optional]
+int => Return Type [Optional], here we take 'int' in place of 'void'
+because we need our output a integer value.
 findAare => Function Name
 (int length, int breadth) => Required Parameters
 
